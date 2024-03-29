@@ -4,7 +4,7 @@ This project is a web-based "Send To Pager" application built entirely with HTML
 
 ## Demo
 
-[Live Demo](#)
+[Live Demo](https://pager-project-duckie.netlify.app/)
 
 ![Screenshot](assets/pager-screenshot.png)
 
