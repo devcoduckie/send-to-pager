@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Send to Pager</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="pager">
+        <h2>Pager</h2>
+        <div id="pager-display">1234</div>
+      </div>
+      <div class="phone">
+        <h2>Phone</h2>
+        <div id="phone-display">1234</div>
+        <div class="keys">
+          <div class="key-row">
+            <button class="key" onclick="keyPress(1)">1</button>
+            <button class="key" onclick="keyPress(2)">2</button>
+            <button class="key" onclick="keyPress(3)">3</button>
+          </div>
+          <div class="key-row">
+            <button class="key" onclick="keyPress(4)">4</button>
+            <button class="key" onclick="keyPress(5)">5</button>
+            <button class="key" onclick="keyPress(6)">6</button>
+          </div>
+          <div class="key-row">
+            <button class="key" onclick="keyPress(7)">7</button>
+            <button class="key" onclick="keyPress(8)">8</button>
+            <button class="key" onclick="keyPress(9)">9</button>
+          </div>
+          <div class="key-row">
+            <button class="key" onclick="keyPress('*')">*</button>
+            <button class="key" onclick="keyPress(0)">0</button>
+            <button class="key" onclick="keyPress('#')">#</button>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="button" id="reset-btn" onclick="resetDisplay()">
+            RESET
+          </button>
+          <button class="button" id="send-btn" onclick="sendDisplay()">
+            SEND
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

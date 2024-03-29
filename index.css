@@ -1,0 +1,129 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Press Start 2P", system-ui;
+  background-color: #e9f1fa;
+}
+
+.container {
+  border: 5px solid black;
+  border-radius: 20px;
+  background-color: #f8f8f8;
+  width: 300px;
+  text-align: center;
+  padding: 30px;
+}
+
+/* PAGER SECTION*/
+
+.pager {
+  margin-bottom: 30px;
+  background-color: #283033;
+  padding: 10px 10px 10px 10px;
+}
+
+.pager h2 {
+  color: #f8f8f8;
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  user-select: none;
+}
+
+#pager-display {
+  background-color: #9ec4b3;
+  color: #000000;
+  user-select: none;
+}
+
+#pager-display,
+#phone-display {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 25px; */
+}
+
+/* PHONE SECTION */
+
+.phone {
+  background-color: #d9d9d9;
+  padding: 10px 10px 10px 10px;
+}
+
+.phone h2 {
+  color: #000000;
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  user-select: none;
+}
+
+#phone-display {
+  background-color: #444444;
+  color: #f8f8f8;
+  margin-bottom: 5px;
+  user-select: none;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+  height: 30px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.key-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.key {
+  width: 90px;
+}
+
+.key:active {
+  background-color: #b8b8b8;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+#reset-btn {
+  background-color: #be482a;
+  color: #f8f8f8;
+  border: 2px solid #0b0b0b;
+  margin-bottom: 5px;
+}
+
+#reset-btn:active {
+  background-color: #a23d24;
+}
+
+#send-btn {
+  background-color: #3d9c7c;
+  color: #0b0b0b;
+  border: 2px solid #0b0b0b;
+}
+
+#send-btn:enabled:active {
+  background-color: #107351;
+}
+
+#send-btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
